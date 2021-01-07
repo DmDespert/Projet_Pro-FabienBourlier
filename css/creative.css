@@ -1,0 +1,702 @@
+/*!
+ * Start Bootstrap - Creative Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+    line-height: 1.75;
+}
+
+hr {
+    max-width: 50px;
+    border-color: #00ffbb;
+    border-width: 3px;
+}
+
+hr.light {
+    border-color: #fff;
+}
+hr.dark {
+    border-color: #000;
+}
+
+a {
+    color: #fff;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    text-decoration: none;
+	outline-style:none;
+}
+
+a:hover,
+a:focus {
+    color: #00ffbb;
+    text-decoration: none;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    outline: 0;
+}
+
+.color {
+    color: #00ffbb;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+section {
+    padding: 200px 0;
+}
+
+aside {
+    padding: 50px 0;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+	background-color: rgba(65,65,65,1);
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(130,130,130,1); 
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+	background: #00ffbb;
+}
+ 
+.menu-top {
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 60px;
+	background-color: rgba(0,0,0,1);
+	z-index: 100;
+	padding: 0 50px 0 50px;
+	-webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+    border-bottom: 2px solid #222;
+}
+
+.closedMenu {
+	top: 0;
+	-webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+}
+
+.openMenu {
+	top: 0px;
+	-webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+}
+
+.showmenu {
+	position: relative;
+	display: block;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.8);
+	z-index: -1;
+}
+
+
+.inmenu {
+	display: block;
+	position: relative;
+	height: 100%;
+	float: right;
+	padding: 5px 20px 5px 20px;
+}
+
+.inmenu li {
+	display: inline;
+}
+
+.inmenu li a {
+    position: relative;
+	padding: 10px 40px 10px 40px;
+	font-size: 15px;
+	color: #fff;
+    line-height: 47px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+}
+
+.inmenu li a:hover {
+    color: #00ffbb;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+}
+
+.inmenu li a:after {
+	content:"";
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: transparent;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+}
+
+.inmenu li a:hover:after {
+	content:"";
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #00ffbb;
+    color: #00ffbb;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+
+/*.inmenu li a:hover {
+	color: #000;
+    background-color: #00ffbb;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}*/
+
+.logo {
+	position: relative;
+	padding: 7px 20px 7px 20px;
+	float: left;
+	color: #fff;
+	font-size: 20px;
+}
+
+.logo:hover {
+	cursor: pointer;
+}
+
+.menu {
+	display: none;
+	position: relative;
+	float: right;
+	color: #fff;
+	font-size: 22px;
+	line-height: 1;
+	padding: 18px;
+	z-index: 100;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	border-radius: 150px;
+}
+
+.menu:hover {
+	cursor: pointer;
+}
+
+.toggleMenu {
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	background-color: #00ffbb;
+	border-radius: 0px;
+}
+
+.toggletoup {
+	margin-bottom: -0px !important;
+	-webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+}
+
+@media ( max-width : 991px ) {
+	.menu-top {
+		display: block;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 60px;
+		padding: 0 0px 0 0px;
+		background-color: #000;
+		z-index: 100;
+		-webkit-transition: all 1s ease-in-out;
+		-moz-transition: all 1s ease-in-out;
+		-o-transition: all 1s ease-in-out;
+		transition: all 1s ease-in-out;
+	}
+	
+	.menu {
+		display: block;
+	}
+	
+	.closedMenu {
+		top: -150%;
+		-webkit-transition: all 1s ease-in-out;
+		-moz-transition: all 1s ease-in-out;
+		-o-transition: all 1s ease-in-out;
+		transition: all 1s ease-in-out;
+	}
+	
+	.showmenu {
+		position: fixed;
+		display: table;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0,0,0,0.8);
+		z-index: -1;
+	}
+	
+	.inmenu {
+		display: table-cell;
+		vertical-align: middle;
+		position: relative;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		padding: 48px;
+		overflow: hidden;
+		float: none;
+	}
+
+	.inmenu li {
+		display: block;
+		-webkit-transition: all 0.5s ease-in-out;
+		-moz-transition: all 0.5s ease-in-out;
+		-o-transition: all 0.5s ease-in-out;
+		transition: all 0.5s ease-in-out;
+	}
+	
+	.inmenu li:hover {
+		background-color: #000;
+		-webkit-transition: all 0.5s ease-in-out;
+		-moz-transition: all 0.5s ease-in-out;
+		-o-transition: all 0.5s ease-in-out;
+		transition: all 0.5s ease-in-out;
+	}
+
+	.inmenu li a {
+		text-align: center;
+		padding: 20px 15px;
+		display: block;
+		font-size: 18px;
+		color: #fff;
+		-webkit-transition: all 0.5s ease-in-out;
+		-moz-transition: all 0.5s ease-in-out;
+		-o-transition: all 0.5s ease-in-out;
+		transition: all 0.5s ease-in-out;
+	}
+
+	.inmenu li a:hover {
+		color: #fff;
+        background-color: #00ffbb;
+		-webkit-transition: all 0.5s ease-in-out;
+		-moz-transition: all 0.5s ease-in-out;
+		-o-transition: all 0.5s ease-in-out;
+		transition: all 0.5s ease-in-out;
+	}
+    .inmenu li a:hover:after {
+        content:"";
+        position: absolute;
+        top: 48px;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        background-color: transparent;
+        color: #00ffbb;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+header {
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    text-align: center;
+    color: #fff;
+    background-image: url(../img/header.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+header .header-content {
+    position: relative;
+    width: 100%;
+    padding: 200px 15px;
+    text-align: center;
+}
+
+header .header-content .header-content-inner h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+header .header-content .header-content-inner hr {
+    margin: 30px auto;
+}
+
+header .header-content .header-content-inner p {
+    margin-bottom: 50px;
+    font-size: 16px;
+    font-weight: 300;
+    color: rgba(255,255,255,.7);
+}
+
+@media(min-width:768px) {
+    header {
+        min-height: 100%;
+    }
+
+    header .header-content {
+        position: absolute;
+        top: 50%;
+        padding: 0 50px;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
+    header .header-content .header-content-inner {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 1000px;
+    }
+
+    header .header-content .header-content-inner p {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 80%;
+        font-size: 18px;
+    }
+}
+
+.btn {
+    border-box: 0;
+    border-radius: 0;
+    padding: 20px 30px;
+}
+
+.bg-primary {
+    position: relative;
+    background-color: #000;
+    background-image: url('../img/header2.jpg');
+    background-size: cover;
+    background-position: center center;
+    padding: 200px 0;
+    transform: translate3d(0,0,0);
+    background-attachment: fixed;
+}
+
+.bg-about {
+    position: relative;
+    color: #fff;
+    background-color: #000;
+    text-align: justify;
+    transform: translate3d(0,0,0);
+}
+.cv {
+    position: relative;
+    width: 100%;
+    background-color: #000;
+}
+.text-faded {
+    color: #fff;
+    padding-bottom: 30px;;
+}
+.title-portfolio {
+    text-align: center;
+}
+
+ /**
+ * ========================================
+ * MODAL FULLSCREEN
+ * ========================================
+ */
+
+.modal {
+	padding: 0 0 100px 0;
+	color: rgba(36,36,35,1);
+	z-index: 95;
+}
+.modal.fade .modal-dialog {
+  -webkit-transform: translate(0, -0%);
+  -ms-transform: translate(0, -0%);
+  transform: translate(0, -0%);
+  -webkit-transition: -webkit-transform 0.8s ease-out;
+  -moz-transition: -moz-transform 0.8s ease-out;
+  -o-transition: -o-transform 0.8s ease-out;
+  transition: transform 0.8s ease-out;
+}
+.modal-body {
+	padding: 0;
+}
+.modal-header, .modal-footer {
+	border: 0;
+}
+.modal-fullscreen {
+  background: transparent;
+}
+.modal-fullscreen .modal-content {
+  background: transparent;
+  border: 0;
+  -webkit-box-shadow: none;  
+  box-shadow: 0;
+}
+.modal-content{
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-o-box-shadow: none;
+	box-shadow: none;
+}
+.modal-backdrop.modal-backdrop-fullscreen {
+	background-color: #E8EDDF;
+	background-image: url('../img/motifwhite.png');
+	background-repeat: repeat;
+	z-index: 90;
+}
+.modal-backdrop.modal-backdrop-fullscreen.in {
+	opacity: .97;
+	filter: alpha(opacity=97);
+}
+.modal-fullscreen .modal-dialog {
+	margin: 0;
+	margin-right: auto;
+	margin-left: auto;
+	width: 100%;
+}
+@media (min-width: 768px) {
+	.modal-fullscreen .modal-dialog {
+		width: 750px;
+	}
+}
+@media (min-width: 992px) {
+	.modal-fullscreen .modal-dialog {
+		width: 970px;
+	}
+}
+@media (min-width: 1200px) {
+	.modal-fullscreen .modal-dialog {
+		width: 1170px;
+	}
+}
+
+.modal-project {
+    border: 0;
+    width: 100%;
+}
+.pcenter {
+    text-align: center;
+}
+.pjusty {
+    text-align: justify;
+}
+.btn {
+    border: 0;
+    padding: 20px 40px;
+    background-color: rgba(0,255,187,1);
+    color: #fff;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.btn:hover {
+    color: #000;
+    background-color: rgba(0,255,187,0.9);
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.projet {
+    background-color: #000;
+}
+.pcenter .fa {
+    background-color: #000;
+    padding: 20px;
+    border: 1px solid #333;
+}
+.present-project {
+    padding: 10px;
+    min-height: 600px;
+}
+
+.pcenter img {
+    max-width: 100%;
+    height: auto;
+}
+.project-inner {
+    position: relative;
+    background-color: #333;
+    padding: 10px;
+    color: #fff;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    border-bottom: 10px solid #00ffbb;
+    border-top: 2px solid #00ffbb;
+}
+.project-inner:hover {
+    background-color: #555;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.descript-project {
+    padding: 20px 0;
+}
+.project-title {
+    padding: 0 0 20px 0;
+}
+.padding-video {
+    padding: 10px;
+    background-color: #151515;
+}
+.padding-row-project {
+    padding: 50px 0px;
+}
+@media (max-width: 1199px) {
+    .padding-text {
+        padding: 50px 30px;
+    }   
+}
+@media (min-width: 1200px) {
+    .padding-text {
+        padding: 0 50px;
+    }   
+}
+.contact {
+    background-image: url('../img/header3.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.footer {
+    position: relative;
+    background-color: #000;
+    padding: 5px 0 5px 0;
+    color: #fff;
+    overflow: hidden;
+}
+.footer-text {
+    padding: 20px;
+    text-align: right;
+    color: #555;
+    margin: 0;
+}
+@media (max-width: 960px) {
+    .footer-text {
+        text-align: center;
+    }  
+}
+.title-contact {
+    text-align: justify;
+}
+.form-control {
+    border-radius: 0;
+    padding: 25px 20px;
+}
+
+.table-out {
+	width: 100%;
+	height: 100%;
+	display: table;
+}
+
+.table-in {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.table-in p {
+	margin: 0;
+}
+.contact-inner {
+    color: #fff;
+    padding: 50px 0px 50px 0px;
+}
+.fa-cancel {
+    padding: 0;
+    border: 0 !important;
+    background-color: transparent !important;
+}
+.textin {
+    background-image:url('../img/texture.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+.creditlink {
+    color: #888;
+}
+
